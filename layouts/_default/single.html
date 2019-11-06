@@ -42,7 +42,7 @@
         {{ partial "relatedposts.html" . }}
     </article>
 
-    {{ if eq .Page.Type "post" }}
+    {{ if eq .Page.Type "posts" }}
     <nav class="navigation post-navigation" role="navigation">
         <div class="nav-links">
             <div class="nav-previous">
@@ -61,7 +61,6 @@
         {{ template "_internal/disqus.html" . }}
     </section>
     {{ end }}
-    .Page.Type: "{{- .Page.Type }}"
 
 </main>
 
